@@ -112,13 +112,6 @@
             </div>
         </div>
 
-        <div class="product-grid hidden-products" id="extra-products">
-            <div class="product-card"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600" class="product-img"><div class="product-info"><h3>Kurabiye</h3><p>Ev yapımı tadında.</p></div></div>
-            <div class="product-card"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" class="product-img"><div class="product-info"><h3>Köy Ekmeği</h3><p>Doğal ekşi mayalı.</p></div></div>
-            <div class="product-card"><img src="https://images.unsplash.com/photo-1620921515234-9382f6e917d2?w=600" class="product-img"><div class="product-info"><h3>Peynirli Börek</h3><p>Sıcak ve kat kat.</p></div></div>
-        </div>
-
-        <button class="btn-more" id="loadMoreBtn" onclick="toggleProducts()">Daha Fazla Gör</button>
     </section>
 
     <section class="section" id="subeler" style="background-color: var(--light-bg);">
@@ -163,18 +156,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 800, once: true });
-        function toggleProducts() {
-            var extra = document.getElementById("extra-products");
-            var btn = document.getElementById("loadMoreBtn");
-            if (extra.style.display === "grid") {
-                extra.style.display = "none";
-                btn.innerHTML = "Daha Fazla Gör";
-            } else {
-                extra.style.display = "grid";
-                btn.innerHTML = "Daha Az Göster";
-                AOS.refresh();
-            }
-        }
     </script>
 </body>
 </html>
